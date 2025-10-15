@@ -1,0 +1,125 @@
+body
+{
+    background-image: url(tlo1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+#main1 
+{
+    width: 100%;
+  
+    display: grid;
+    grid:
+      "header header header" auto
+      "lewa srodek prawa" 3fr
+      "footer footer footer" auto
+      / 1fr 1fr 1fr;
+    gap: 8px;
+}
+  
+#header 
+{ 
+    grid-area: header;
+    text-align: center;
+    border-style: outset;
+    padding: 4px;
+    background: rgba(0, 255, 255, 0.2);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#left 
+{ 
+    grid-area: lewa;
+    border-style: outset;
+    border-radius: 20px 0px 0px 20px;
+    padding: 4px;
+    background: rgba(0, 255, 255, 0.2);
+    transition-duration: 1s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#left:hover
+{
+    background: rgba(0, 255, 255);
+}
+#center 
+{
+    grid-area: srodek;
+    border-style: outset;
+    padding: 4px;
+    background: rgba(0, 255, 255, 0.2);
+    transition-duration: 1s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#center:hover
+{
+    background: rgba(0, 255, 255);
+}
+#right 
+{ 
+    grid-area: prawa;
+    border-style: outset;
+    border-radius: 0px 20px 20px 0px;
+    padding: 4px;
+    background: rgba(0, 255, 255, 0.2);
+    transition-duration: 1s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#right:hover
+{
+    background: rgba(0, 255, 255);
+}
+#footer 
+{ 
+    grid-area: footer;
+    border-style: outset;
+    padding: 4px; 
+    background: rgba(0, 255, 255, 0.2);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1
+{
+    text-shadow:
+  1px 1px 2px red,
+  0 0 1em blue,
+  0 0 0.2em blue;
+}
+h2
+{
+    text-shadow: 1px 1px 2px purple;
+}
+h3
+{
+    text-shadow: 1px 1px 2px green;
+}
+.akapit
+{
+    font-family: cursive;
+}
+ol
+{
+    list-style-type: upper-roman;
+}
+ul
+{
+    list-style: disc;
+}
+@media screen and (max-width: 600px) {
+    #main1 {
+      grid:
+        "header" auto
+        "lewa" auto
+        "srodek" auto
+        "prawa" auto
+        "footer" auto
+        / 1fr;
+
+        text-align:left;
+
+
+background-repeat: no-repeat;
+background-position: scroll;
+    };
+ 
+    
+}
