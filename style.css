@@ -1,0 +1,39 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    margin: 40px auto;
+    width: 400px;
+    color: #333;
+    background-color: chocolate;
+}
+.results 
+{
+    margin-top: 20px;
+}
+  
+.task 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+  
+.task span mark 
+{
+    background: yellow;
+}
+  
+button 
+{
+    cursor: pointer;
+}
+  
+input[type="text"], input[type="date"] 
+{
+    padding: 5px;
+    margin-right: 5px;
+}
