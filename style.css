@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    text-align: center;
+    background-image: url(tlo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#weather {
+    margin: auto;
+    margin-top: 20px;
+    border-style: outset;
+    border-radius: 20px;
+    padding: 40px;
+    background: rgba(0, 255, 255, 0.2);
+    height: auto;
+    width: 300px;
+    text-align: center;
+
+}
+#icon
+{
+    background-color: rgb(157, 157, 157, 0.5);
+    border-radius: 20px;
+}
+h1, h2 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+.forecast-item {
+    margin: auto;
+    margin-top: 20px;
+    border-style: outset;
+    border-radius: 20px;
+    padding: 40px;
+    background: rgba(0, 255, 255, 0.2);
+    height: auto;
+    width: 300px;
+    text-align: center;
+}
